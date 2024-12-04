@@ -1,0 +1,76 @@
+.addTask{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.addTask form{
+    width: 100%;
+}
+.formWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formInput{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.formInput label{
+    color: black;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+}
+.taskName{
+    height: 30px;
+}
+.taskDesc{
+    height: 50px;
+}
+.taskDueDate{
+    height: 30px;
+}
+.addTaskBtn{
+    margin-top: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: aliceblue;
+    border: 0px;
+    font-size: larger;
+    box-shadow: 5px 5px 5px 0px rgb(79, 182, 79);
+}
+.overlayHeader{
+    border-bottom: 2px solid blue;
+}
+.overlayHeading{
+    font-size: 20px;
+    color: rgb(96, 156, 35);
+    display: inline;
+    margin-left: 125px;
+    margin-right: 10px;
+    
+}
+.overlayCanBtn{
+    background-color: white;
+    color: red;
+    border: 0px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 85px;
+}
+@media screen and (max-width:700px){
+    .overlayCanBtn{
+        font-size: 15px;
+        margin-left: 60px;
+    }
+    .overlayHeading{
+        font-size: 10px;
+        margin-left: 80px;
+    }
+}

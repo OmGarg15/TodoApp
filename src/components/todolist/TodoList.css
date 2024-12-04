@@ -1,0 +1,110 @@
+.allTodos{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.singleTodo{
+    border-radius: 50px;
+    margin: 10px 0;
+    background-color: #5dadf8;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    align-content: space-between;
+    height: auto !important;
+}
+.checkBox{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.taskDetails{
+    flex: 11;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.titleDate{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex: 1;
+    border-bottom: 2px solid white;
+}
+.todoTitle{
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 30px;
+}
+.todoDueDate{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 10px;
+    font-size: 20px;
+    border-left: 2px solid white;
+}
+.taskDesc1{
+    margin-top: 10px;
+    flex: 1;
+}
+.todoDesc{
+    font-size: 25px;
+}
+.taskActions{
+    margin-left: 10px;
+    border-left: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex: 2;
+}
+@media screen and (max-width:1020px){
+    .singleTodo{
+        width: 500px;
+    }
+    .todoTitle{
+        font-size: 25px;
+    }
+    .todoDueDate{
+        font-size: 11px;
+    }
+    .todoDesc{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:700px){
+    .singleTodo{
+        width: 300px;
+    }
+    .todoTitle{
+        font-size: 15px;
+    }
+    .todoDueDate{
+        font-size: 8px;
+        font-weight: 700;
+    }
+    .todoDesc{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:412px){
+    .singleTodo{
+        width: 250px;
+    }
+    .todoTitle{
+        font-size: 10px;
+    }
+    .todoDueDate{
+        font-size: 8px;
+        font-weight: 700;
+    }
+    .todoDesc{
+        font-size: 7px;
+    }
+}

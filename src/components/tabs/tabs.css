@@ -1,0 +1,43 @@
+.filtersContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.filtersContainer p{
+    font-size: 30px;
+
+}
+.filtersList{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.filtersList li{
+    width: 100%;
+    background-color: lightblue;
+    color: green;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.filtersList li:hover{
+    color: brown;
+}
+.filtersList li.active{
+    color: blue;
+    background-color: aliceblue;
+}
+@media screen and (max-width:700px){
+    .filtersContainer p{
+        font-size: 15px;
+    }
+    .filtersList li{
+        font-size: 15px;
+    }
+}
